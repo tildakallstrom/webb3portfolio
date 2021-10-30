@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/img.js"],"names":["$","document","ready","click","slideToggle"],"mappings":"AAAAA,EAAAC,UAAAC,OAAA,WACAF,EAAA,SAAAG,OAAA,WACAH,EAAA,UAAAI,YAAA","file":"../src/main.js","sourcesContent":["$(document).ready(function(){\r\n    $(\"#flip\").click(function(){\r\n      $(\"#panel\").slideToggle(\"slow\");\r\n    });\r\n  });"]}

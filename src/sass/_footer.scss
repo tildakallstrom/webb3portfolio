@@ -1,0 +1,52 @@
+//Skapad av Tilda Källström 2021
+//footer-sektion
+
+$pink: #f8ccd9;
+$lightblue: #59bfff;
+
+footer {
+  background-image: linear-gradient(to right, $pink, darken($pink, 15), darken($pink, 15), $pink);
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: "Quicksand", sans-serif;
+}
+.footergrids {
+  margin-bottom: 2em;
+}
+.footerlogo {
+  width: 200px;
+}
+.whitelink {
+  color: white;
+}
+.whiteh3 {
+  color: white;
+  font-family: "Gruppo", serif;
+  font-size: 1.4em;
+}
+.bottomfooter {
+  background-color: $lightblue;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+}
+.footerlogos {
+  max-width: 40px;
+}
+.bottomfooter1 {
+  background-color: $lightblue;
+  bottom: 0;
+  padding: 1em;
+  margin-bottom: -2em;
+}
+//desktop
+@media only screen and (min-width: 950px) {
+  .footergrids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2em;
+  }
+}

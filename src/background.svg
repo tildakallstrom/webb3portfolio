@@ -1,0 +1,56 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1936 1148" width="1936" height="1148">
+	<title>background-svg</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="1.5" y1="513.25" x2="2026.74" y2="513.25">
+			<stop offset="0" stop-color="#cce0f4"  />
+			<stop offset="0.06" stop-color="#c3dcf2"  />
+			<stop offset="0.17" stop-color="#a9d2ee"  />
+			<stop offset="0.31" stop-color="#80c2e7"  />
+			<stop offset="0.46" stop-color="#47acde"  />
+			<stop offset="0.57" stop-color="#1e9cd7"  />
+			<stop offset="0.87" stop-color="#0075be"  />
+			<stop offset="0.99" stop-color="#005b97"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="0" y1="573.75" x2="2021.32" y2="573.75">
+			<stop offset="0" stop-color="#ff7bac"  />
+			<stop offset="0.09" stop-color="#ff7bac" stop-opacity="0.97" />
+			<stop offset="0.22" stop-color="#ff7bac" stop-opacity="0.88" />
+			<stop offset="0.38" stop-color="#ff7bac" stop-opacity="0.74" />
+			<stop offset="0.57" stop-color="#ff7bac" stop-opacity="0.55" />
+			<stop offset="0.78" stop-color="#ff7bac" stop-opacity="0.3" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0" />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="0" y1="0" x2="0" y2="0">
+			<stop offset="0" stop-color="#ff7bac"  />
+			<stop offset="0.22" stop-color="#ff7bac" stop-opacity="0.76" />
+			<stop offset="0.6" stop-color="#ff7bac" stop-opacity="0.36" />
+			<stop offset="0.87" stop-color="#ff7bac" stop-opacity="0.1" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0" />
+		</linearGradient>
+		<linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="0" y1="0" x2="0" y2="0">
+			<stop offset="1" stop-color="#ff7bac"  />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.99" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.97" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.92" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.85" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.77" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.66" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.53" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.39" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.22" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0.04" />
+			<stop offset="1" stop-color="#ff7bac" stop-opacity="0" />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: url(#grd3);stroke: #000000 } 
+		.shp3 { fill: url(#grd4) } 
+	</style>
+	<path id="Layer" class="shp0" d="M1936.5 713C1995.5 556.8 2054.08 375.91 2013 352.5C1987 337.68 1941.67 397.7 1858 445.5C1725.51 521.18 1620.66 495.5 1396 495.5C1151.14 495.5 966.18 526.03 830 548.5C623.84 582.5 520.76 599.5 411 652.5C210 749.5 83.46 905.72 8 1026.5C5.83 684.33 3.67 342.17 1.5 0L1936.5 0L1936.5 713Z" />
+	<path id="Layer" class="shp1" d="M1936.5 713C2027.3 431.76 2030.39 360.27 2013 352.5C1996 344.89 1969.59 403.04 1887.5 453C1812.22 498.81 1739.29 507.79 1666.5 516C1605.79 522.84 1577.96 519.24 1413.5 510C1282.01 502.61 1216.27 498.92 1168.5 498C1014.33 495 895.85 509.76 831.5 518C667.14 539 527.82 556.9 410.5 612C161.09 729.14 47.69 997.47 0 1147.5L1.5 0L1936.5 0L1936.5 713Z" />
+	<path id="Layer" class="shp2" d="" />
+	<path id="Layer" class="shp3" d="" />
+</svg>

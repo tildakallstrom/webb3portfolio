@@ -1,0 +1,323 @@
+//Skapad av Tilda Källström 2021
+//allmän styling
+
+$base-color: rgb(245, 245, 245);
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $base-color;
+}
+h1 {
+    color: $base-color;
+    font-size: 3.8em;
+    font-family: "Gruppo", serif;
+    text-align: center;
+   
+}
+h2 {
+    color: black;
+    font-family: "Gruppo", serif;
+}
+.bigh2 {
+    font-size: 2.3em;
+    margin-bottom: -0.1em;
+}
+.centerh2 {
+    text-align: center;
+    color: black;
+    font-family: "Gruppo", serif;
+    font-size: 2.4em;
+}
+h3 {
+    color: black;
+    font-family: "Gruppo", serif;
+}
+.moveup {
+    margin-top: -1.1em;
+    margin-left: 1.5em;
+    font-size: 2em;
+}
+.centerh3 {
+    text-align: center;
+    color: black;
+    font-family: "Gruppo", serif;
+}
+h4 {
+    color: black;
+    font-family: "Gruppo", serif;
+    font-size: 1.3em;
+    margin-bottom: -0.5em;
+}
+p {
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    max-width: 450px;
+    line-height: 1.5em;
+}
+.centerp {
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 4em;
+}
+.big {
+    font-size: 1.5em;
+}
+.hi {
+    margin-bottom: 15em;
+}
+.btnreg {
+    font-family: "Quicksand", sans-serif;
+    color: #fa82a7;
+    border: 2px solid #fa82a7;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.04em;
+    margin-top: -1em;
+    text-decoration: none;
+    background-color: rgba(14, 13, 13, 0.9);
+    width: 97%;
+    margin: auto;
+}
+.btnreg:hover {
+    background-color: rgba(14, 13, 13, 0.85);
+    cursor: pointer;
+    text-decoration: underline;
+}
+//mixin - skapar rundade hörn om satt till right, annars raka hörn
+@mixin om($rounded: right) {
+    background-color: lighten(#59bfff, 22);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 3em;
+    box-shadow: 6px 6px 10px 10px rgba(103, 103, 104, 0.1);
+    //if/else-sats
+    @if $rounded {
+        border-radius: 20px;
+    } @else {
+        border-radius: 0px;
+    }
+}
+
+.om {
+    @include om;
+    
+
+}
+
+.portfolio {
+    background-color: $base-color;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+    margin-top: 2em;
+}
+.container {
+    margin-top: 5px;
+}
+.tdimg {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .tdimg {
+    opacity: 0.5;
+}
+.container:hover .middle {
+    opacity: 1;
+}
+.text {
+    background-color: rgba(14, 13, 13, 0.9);
+    color: #fa82a7;
+    border: 2px solid #fa82a7;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.04em;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+}
+.text:hover {
+    cursor: pointer;
+}
+.webbtn {
+    font-family: "Quicksand", sans-serif;
+    color: #fa82a7;
+    border: 2px solid #fa82a7;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.04em;
+    text-decoration: none;
+    background-color: rgba(14, 13, 13, 0.9);
+    margin-top: 3.2em;
+    min-width: 90%;
+}
+.webbtn:hover {
+    background-color: rgba(14, 13, 13, 0.85);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.cv {
+    background-color: $base-color;
+    max-width: 800px;
+    margin: auto;
+    padding: 1em;
+    margin-top: 2em;
+}
+.coursetable {
+    margin: auto;
+    margin-top: 3em;
+}
+.works {
+    border: 1px solid lightgray;
+}
+
+.onework {
+    border-bottom: 1px solid lightgray;
+    padding: 2em;
+    box-shadow: 5px 3px 3px #fa82a7;
+}
+
+.school {
+    border-bottom: 1px solid lightgray;
+    padding: 2em;
+    padding-top: 3em;
+    margin-top: -4em;
+}
+.readMore {
+    color: black;
+    border: 2px solid #59bfff;
+    background-color: $base-color;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-family: "Quicksand", sans-serif;
+    max-width: 350px;
+}
+.readMore:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#expander {
+    margin-top: -1em;
+}
+.textExpand {
+    display: none;
+}
+
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+#flip {
+    color: black;
+    border: 2px solid #59bfff;
+    background-color: $base-color;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-family: "Quicksand", sans-serif;
+   text-align: center;
+}
+#flip:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.intro1 {
+    max-width: 500px;
+    margin: auto;
+}
+.button {
+    text-decoration: none;
+    color: $base-color;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+/* table för all info från db */
+.table-wrapper {
+    overflow: auto;
+    max-width: 680px;
+    background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)),
+        linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) 0 100%,
+        radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+        radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-color: $base-color;
+    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-position: 0 0, 100%, 0 0, 100%;
+    background-attachment: local, local, scroll, scroll;
+    margin: auto;
+}
+tr {
+    border-bottom: 1px solid;
+    font-family: "Quicksand", sans-serif;
+}
+th {
+    background-color: rgba(14, 13, 13, 0.9);
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+th,
+td {
+    text-align: left;
+    padding: 0.5em 1em;
+    white-space: nowrap;
+    font-family: "Quicksand", sans-serif;
+}
+//ger olika färger till raderna i table
+#paginatedTable tr:nth-child(even) {
+    background-color: #fde0e9;
+}
+#paginatedTable tr {
+    background-color: #d3ebfa;
+}
+#paginatedTable tr:hover {
+    background-color: $base-color;
+}
+.profileimg {
+    max-width: 200px;
+}
+.weblogo {
+    max-width: 200px;
+    margin-left: 25%;
+    margin-top: 30px;
+    animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: 2;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
